@@ -1,0 +1,58 @@
+import React, { useEffect} from 'react'
+
+function NavBar() {
+
+   useEffect(() => {
+    const handleResize = () => {
+      const menu = document.querySelector('.mobile-nav-menu');
+      if (window.innerWidth >= 640 && menu && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+   const handleMenuToggle = () => {
+        // Logic to toggle the visibility of the menu
+        const menu = document.querySelector('.mobile-nav-menu');
+        menu.classList.toggle('hidden');
+    }
+
+  return (
+    <nav className="p-8">
+      <ul className="hidden w-full sm:flex justify-between sm:justify-around sm:items-center">
+        <li><a href="#"><img className="min-w-fit" src="/images/business-logo/logo.svg" /></a></li>
+        <li>
+          <div className="hidden sm:flex sm:items-center sm:space-x-6 min-w-fit">
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+          </div>
+        </li>
+        <li><a href="#" className="cta inline-block w-auto whitespace-nowrap py-6 px-8 bg-orange-700 rounded-full">Get Started</a></li>
+      </ul>
+        {/* mobile navbar */}
+      <ul className="w-full flex justify-between sm:hidden">
+        <li><a href="#"><img src="/images/business-logo/logo.svg" /></a></li>
+        <li><button className="cursor-pointer" onClick={handleMenuToggle}><img src="/images/mobile-nav-icons/icon-hamburger.svg" /></button></li>
+      </ul>
+
+      {/* open nav menu */}
+      <div className="mobile-nav-menu hidden bg-white text-[hsl(228,88%,59%)] p-6 mt-8">
+          <ul className="flex flex-col items-center justify-center space-y-6 mt-6 p-4 font-[700]">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Get Started</a></li>
+          </ul>
+      </div>
+    </nav>
+  )
+}
+
+export default NavBar

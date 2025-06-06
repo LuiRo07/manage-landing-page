@@ -1,11 +1,12 @@
-import NavBar from './components/desktop/NavBar/NavBar'
+import IntroSection from './components/intro-section/IntroSection'
 
 import './App.css'
 
+// render mobile version of app depending on screen size
 function App() {
   return (
     <>
-      <NavBar />
+      <IntroSection />
     </>
   )
 }
