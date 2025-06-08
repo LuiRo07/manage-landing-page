@@ -1,12 +1,17 @@
-import React, { useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
+import hamburgerIcon from '/images/mobile-nav-icons/icon-hamburger.svg'
+import closeIcon from '/images/mobile-nav-icons/icon-close.svg'
 
 function NavBar() {
+  // State to manage the visibility of the mobile menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
    useEffect(() => {
     const handleResize = () => {
       const menu = document.querySelector('.mobile-nav-menu');
       if (window.innerWidth >= 640 && menu && !menu.classList.contains('hidden')) {
         menu.classList.add('hidden');
+        setIsMenuOpen(false);
       }
     };
     window.addEventListener('resize', handleResize);
@@ -17,10 +22,11 @@ function NavBar() {
         // Logic to toggle the visibility of the menu
         const menu = document.querySelector('.mobile-nav-menu');
         menu.classList.toggle('hidden');
+        setIsMenuOpen(!isMenuOpen);
     }
 
   return (
-    <nav className="p-8">
+    <nav className="p-8 z-index-3">
       <ul className="hidden w-full sm:flex justify-between sm:justify-around sm:items-center">
         <li><a href="#"><img className="min-w-fit" src="/images/business-logo/logo.svg" /></a></li>
         <li>
@@ -37,7 +43,7 @@ function NavBar() {
         {/* mobile navbar */}
       <ul className="w-full flex justify-between sm:hidden">
         <li><a href="#"><img src="/images/business-logo/logo.svg" /></a></li>
-        <li><button className="cursor-pointer" onClick={handleMenuToggle}><img src="/images/mobile-nav-icons/icon-hamburger.svg" /></button></li>
+        <li><button className="cursor-pointer" onClick={handleMenuToggle}><img src={isMenuOpen ? closeIcon : hamburgerIcon } /></button></li>
       </ul>
 
       {/* open nav menu */}

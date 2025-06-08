@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBar from './NavBar/NavBar'
-import MobileNav from './NavBar/MobileNav'
+import OverlayComponent from '../overlay/desktop/OverlayComponent'
 
 function IntroSection() {
   return (
     <section>
-      <NavBar />
+      <OverlayComponent>
+      </OverlayComponent>
     </section>
   )
 }

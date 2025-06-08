@@ -4,3 +4,14 @@ body {
     background-color: rgb(60, 58, 58);
     color: rgb(233, 231, 231);
 }
+
+@theme {
+    /* Primary */
+    --color-primary-red: hsl(12, 88%, 59%);
+    --color-primary-blue: hsl(228,39%, 23%);
+    /* Neutral */
+    --color-dark-gray-blue: hsl(227, 12%, 61%);
+    --color-dark-blue: hsl(233, 12%, 13%);
+    --color-pale-red: hsl(13, 100%, 96%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
