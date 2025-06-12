@@ -26,7 +26,7 @@ function NavBar() {
     }
 
   return (
-    <nav className="p-8 z-index-3">
+    <nav className="p-8 z-3 relative">
       <ul className="hidden w-full sm:flex justify-between sm:justify-around sm:items-center">
         <li><a href="#"><img className="min-w-fit" src="/images/business-logo/logo.svg" /></a></li>
         <li>
@@ -47,7 +47,7 @@ function NavBar() {
       </ul>
 
       {/* open nav menu */}
-      <div className="mobile-nav-menu hidden bg-white text-[hsl(228,88%,59%)] p-6 mt-8">
+      <div className="mobile-nav-menu hidden bg-white text-[hsl(228,88%,59%)] p-6 mt-8 z-10">
           <ul className="flex flex-col items-center justify-center space-y-6 mt-6 p-4 font-[700]">
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Product</a></li>
