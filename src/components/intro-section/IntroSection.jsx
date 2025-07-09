@@ -4,7 +4,7 @@ import CTASection from '../cta-section/CTASection'
 
 function IntroSection() {
   return (
-    <section className="w-auto h-screen bg-[url('/images/overlay-pattern/bg-simplify-section-desktop.svg')] bg-cover bg-no-repeat px-8">
+    <section className="bg-[url('/images/overlay-pattern/bg-simplify-section-desktop.svg')] bg-cover bg-no-repeat px-8">
       <NavBar />
       <div className="w-full h-auto flex justify-center items-center mt-4">
         <HeroSection />

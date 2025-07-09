@@ -28,10 +28,10 @@ function NavBar() {
   return (
     <nav className="py-8 z-3 relative">
       {/* navbar breaks if smaller */}
-      <ul className="hidden w-full sm:flex justify-between sm:justify-between sm:items-center sm:min-w-[768px]">
+      <ul className="hidden sm:flex justify-between sm:justify-between sm:items-center sm:min-w-[768px]">
         <li><img className="min-w-fit" src="/images/business-logo/logo.svg" /></li>
         <li>
-          <div className="hidden sm:flex sm:items-center sm:space-x-6 min-w-fit">
+          <div className="hidden sm:flex sm:items-center sm:space-x-4 min-w-fit">
             <a href="#">Pricing</a>
             <a href="#">Product</a>
             <a href="#">About Us</a>
@@ -39,8 +39,9 @@ function NavBar() {
             <a href="#">Community</a>
           </div>
         </li>
-        <li><a href="#" className="inline-block w-auto whitespace-nowrap py-6 px-8 bg-orange-700 rounded-full text-white">Get Started</a></li>
+        <li><a href="#" className="inline-block w-auto whitespace-nowrap bg-orange-700 rounded-full text-white py-4 px-6">Get Started</a></li>
       </ul>
+
         {/* mobile navbar */}
       <ul className="w-full flex justify-between sm:hidden">
         <li><a href="#"><img src="/images/business-logo/logo.svg" /></a></li>
