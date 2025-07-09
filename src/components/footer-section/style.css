@@ -1,5 +1,4 @@
 .footer-container {
-    border: 1px solid red;
     display: grid;
     place-items: center;
 }
@@ -8,25 +7,27 @@
     width: 85%;
     max-width: 1200px;
     height: auto;
-    border: 1px solid white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .svg-container {
     width: fit-content;
-    border: 1px dotted red;
     grid-column-start: 1;
 }
 
 .icons-container {
-    border: 1px solid purple;
+    max-width: 200px;
     grid-row-start: 2;
     align-self: flex-end;
 }
 
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
 .links-container {
-    border: 1px solid white;
     grid-row-start: span 2;
     grid-column-start: span 2;
 }
@@ -39,7 +40,6 @@
 }
 
 .newsletter-container {
-    border: 1px solid grey;
     grid-column-start: 4;
     grid-row-start: span 2;
 }
@@ -50,6 +50,5 @@ form {
 }
 
 .copyrights {
-    border: 1px solid green;
     margin-top: 3em;
 }

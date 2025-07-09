@@ -20,7 +20,7 @@ function Footer() {
         </div>
         {/* list of icons */}
         <div className="icons-container">
-          <ul className="flex justify-center gap-2">
+          <ul className="icons">
             <li><img src="/images/social-icons/icon-facebook.svg" alt="social icon"/></li>
             <li><img src="/images/social-icons/icon-instagram.svg" alt="social icon"/></li>
             <li><img src="/images/social-icons/icon-pinterest.svg" alt="social icon"/></li>
