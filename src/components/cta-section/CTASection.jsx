@@ -3,7 +3,7 @@ import React from 'react'
 // this section highlights the key features of the Manage software
 function CTASection() {
   return (
-    <section className="flex justify-center gap-2">
+    <section className="flex justify-center gap-2 mb-12">
         <article>
             <h1 className="text-2xl text-primary-blue font-bold mb-4-">What's different about Manage?</h1>
             <p>Manage provides all the functionality your team needs, without the complexity.
