@@ -3,14 +3,16 @@ import React from 'react'
 // this section highlights the key features of the Manage software
 function CTASection() {
   return (
-    <section className="flex justify-center gap-2 mb-12">
-        <article className="w-2/4 h-auto">
+    <section className="flex justify-between mb-[10vh]">
+        {/* left side */}
+        <article className="w-[35%] h-auto">
             <h1 className="text-2xl text-primary-blue font-bold mb-4-">What's different about Manage?</h1>
             <p>Manage provides all the functionality your team needs, without the complexity.
                Our software is tailor-made for modern digital product teams.
             </p>
         </article>
-        <article className="">
+        {/* right side */}
+        <article className="w-[40%]">
             <div className="grid grid-cols-[auto_90%] gap-x-4 mb-4">
                 <span className="bg-primary-red text-white px-6 py-2 rounded-full max-w-fit">01</span>
                 <h1 className="text-lg text-primary-blue mb-2"> Track company-wide progress</h1>

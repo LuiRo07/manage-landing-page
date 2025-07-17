@@ -5,14 +5,9 @@ import CTASection from '../cta-section/CTASection'
 // contains the navbar, hero section, and bullet points
 function IntroSection() {
   return (
-    <section className="bg-[url('/images/overlay-pattern/bg-simplify-section-desktop.svg')] bg-cover bg-no-repeat px-8">
+    <section className="bg-[url('/images/overlay-pattern/bg-simplify-section-desktop.svg')] bg-cover bg-no-repeat px-12">
       <NavBar />
-      <div className="w-full h-auto flex justify-center items-center mt-4">
-        <HeroSection />
-        <div className="w-full h-auto flex justify-center max-w-2xl">
-          <img src="/images/overlay-pattern/illustration-intro.svg" alt="Intro Illustration" className="w-3/4 h-auto" />
-        </div>
-      </div>
+      <HeroSection />
       <CTASection />
     </section>
   )

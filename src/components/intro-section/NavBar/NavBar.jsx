@@ -27,7 +27,7 @@ function NavBar() {
     }
 
   return (
-    <nav className="py-8 z-3 relative">
+    <nav className="py-8 z-3 relative mb-[5%]">
       {/* navbar breaks if smaller */}
       <ul className="hidden sm:flex justify-between sm:justify-between sm:items-center sm:min-w-[768px]">
         <li><img className="min-w-fit cursor-pointer" src="/images/business-logo/logo.svg" /></li>
