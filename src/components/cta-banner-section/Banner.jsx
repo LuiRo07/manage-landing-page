@@ -1,4 +1,5 @@
 import React from 'react'
+import CTA from '../cta-buttons/CTA';
 
 // hero banner component
 function Banner() {
@@ -8,8 +9,7 @@ function Banner() {
             <h1>Simplify how your team works today.</h1>
         </div>
         <div>
-            <button type="button" className="cursor-pointer hover:text-orange-400 inline-block w-auto whitespace-nowrap py-4 px-6 bg-neutral-100 text-orange-700 rounded-full">
-                Get Started </button>
+            <CTA buttonType={"secondary"} />
         </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import IconSocial from './IconSocial';
 import './style.css';
 
 function Footer() {
@@ -20,13 +21,7 @@ function Footer() {
         </div>
         {/* list of icons */}
         <div className="icons-container">
-          <ul className="icons">
-            <li><img src="/images/social-icons/icon-facebook.svg" alt="social icon"/></li>
-            <li><img src="/images/social-icons/icon-instagram.svg" alt="social icon"/></li>
-            <li><img src="/images/social-icons/icon-pinterest.svg" alt="social icon"/></li>
-            <li><img src="/images/social-icons/icon-twitter.svg" alt="social icon"/></li>
-            <li><img src="/images/social-icons/icon-youtube.svg" alt="social icon"/></li>
-          </ul>
+          <IconSocial />
         </div>
         {/* list of links */}
         <div className="links-container">
@@ -43,8 +38,8 @@ function Footer() {
           {/* newsletter */}
           <div className="newsletter-container">
             <form>
-              <input type="email" placeholder="Enter your email" className="bg-light-gray border-2 p-2 rounded-md w-full max-w-xs text-dark-blue" />
-              <button type="submit" className="bg-primary-red text-white p-2 rounded-md ml-2">Go</button>
+              <input type="email" placeholder="Enter your email" className="bg-light-gray border-2 px-6 py-2 rounded-full w-full max-w-xs text-primary-blue focus:text-primary-red focus:outline-primary-red" />
+              <button type="submit" className="bg-primary-red text-white py-2 px-6 rounded-full ml-2">Go</button>
             </form>
             <p className="copyrights">Copyright 2020. All Rights Reserved</p>
           </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react'
+import CTA from '../../cta-buttons/CTA';
 import hamburgerIcon from '/images/mobile-nav-icons/icon-hamburger.svg'
 import closeIcon from '/images/mobile-nav-icons/icon-close.svg'
 
@@ -29,17 +30,17 @@ function NavBar() {
     <nav className="py-8 z-3 relative">
       {/* navbar breaks if smaller */}
       <ul className="hidden sm:flex justify-between sm:justify-between sm:items-center sm:min-w-[768px]">
-        <li><img className="min-w-fit" src="/images/business-logo/logo.svg" /></li>
+        <li><img className="min-w-fit cursor-pointer" src="/images/business-logo/logo.svg" /></li>
         <li>
           <div className="hidden sm:flex sm:items-center sm:space-x-4 min-w-fit">
-            <a href="#">Pricing</a>
-            <a href="#">Product</a>
-            <a href="#">About Us</a>
-            <a href="#">Careers</a>
-            <a href="#">Community</a>
+            <a className="hover:text-dark-gray-blue" href="#">Pricing</a>
+            <a className="hover:text-dark-gray-blue" href="#">Product</a>
+            <a className="hover:text-dark-gray-blue" href="#">About Us</a>
+            <a className="hover:text-dark-gray-blue" href="#">Careers</a>
+            <a className="hover:text-dark-gray-blue" href="#">Community</a>
           </div>
         </li>
-        <li><a href="#" className="inline-block w-auto whitespace-nowrap bg-orange-700 rounded-full text-white py-4 px-6">Get Started</a></li>
+        <li><CTA buttonType={"primary"} /></li>
       </ul>
 
         {/* mobile navbar */}

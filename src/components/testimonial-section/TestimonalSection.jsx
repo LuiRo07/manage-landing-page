@@ -6,6 +6,7 @@ import anishaAvatar from '/images/avatars/avatar-anisha.png';
 import aliAvatar from '/images/avatars/avatar-ali.png';
 import richardAvatar from '/images/avatars/avatar-richard.png'; 
 import shanaiAvatar from '/images/avatars/avatar-shanai.png';
+import CTA from '../cta-buttons/CTA';
 import './style.css';
 
 
@@ -68,7 +69,9 @@ function TestimonalSection() {
           }
         </Carousel>
       </div>
-      <button type="button" className="bg-primary-red text-white px-4 py-2 rounded-full shadow-2xl relative left-[50%]">Get Started</button>
+      <div className="sm:flex sm:justify-center">
+        <CTA buttonType={"primary"} />
+      </div>
     </>
   )
 }
