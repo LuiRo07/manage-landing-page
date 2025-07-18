@@ -69,7 +69,7 @@ function TestimonalSection() {
           }
         </Carousel>
       </div>
-      <div className="sm:flex sm:justify-center">
+      <div className="flex justify-center">
         <CTA buttonType={"primary"} />
       </div>
     </>
