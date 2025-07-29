@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles.css'
 
 // this section highlights the key features of the Manage software
 function CTASection() {
