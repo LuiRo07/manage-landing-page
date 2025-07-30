@@ -3,7 +3,7 @@ import CTA from '../cta-buttons/CTA';
 
 function HeroSection() {
   return (
-    <section className="w-full h-auto flex flex-col sm:flex-row sm:justify-between sm:items-center my-4">
+    <section className="w-full h-auto flex flex-col sm:flex-row sm:justify-between px-8 sm:items-center my-4">
       {/* left side */}
       <div className="text-center sm:text-left sm:mb-[20vh] sm:self-end sm:w-[35%] order-2 sm:order-1">
         <h1 className="font-bold text-4xl sm:text-5xl text-primary-blue mb-6">
