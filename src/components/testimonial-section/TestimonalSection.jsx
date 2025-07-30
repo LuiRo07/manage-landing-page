@@ -51,7 +51,7 @@ function TestimonalSection() {
   ]
 
   return (
-    <>
+    <div className="mb-[10vh]">
       <h1 className="text-center text-primary-blue font-bold text-3xl">What they've said</h1>
       <div className="mb-4">
         <Carousel responsive={responsive} className="carousel">
@@ -72,7 +72,7 @@ function TestimonalSection() {
       <div className="flex justify-center">
         <CTA buttonType={"primary"} />
       </div>
-    </>
+    </div>
   )
 }
 
