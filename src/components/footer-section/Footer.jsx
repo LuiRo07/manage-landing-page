@@ -28,11 +28,11 @@ function Footer() {
           <Logo />
         </div>
         {/* list of icons */}
-        <div className="sm:max-w-[200px] order-3 sm:row-start-2 sm:self-end">
+        <div className="sm:max-w-[200px] order-3 sm:row-start-2 sm:self-end mb-4">
           <IconSocial />
         </div>
         {/* list of links */}
-        <div className="order-2 sm:row-span-2 sm:col-span-2">
+        <div className="order-2 sm:row-span-2 sm:col-span-2 px-6">
           <ul className="grid grid-cols-2 gap-4">
             <li><a className="hover:text-primary-red" href="#">Home</a></li>
             <li><a className="hover:text-primary-red" href="#">Careers</a></li>

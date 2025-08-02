@@ -2,7 +2,7 @@ import React from 'react'
 
 function IconSocial() {
   return (
-    <ul className="flex justify-between sm:justify-around">
+    <ul className="flex justify-between sm:justify-around px-4">
         {/* facebook */}
         <li>
             <svg className="hover:fill-primary-red fill-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="20" height="20">

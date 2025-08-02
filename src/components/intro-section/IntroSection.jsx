@@ -18,7 +18,7 @@ function IntroSection() {
   }, []);
 
   return (
-    <section className="bg-no-repeat bg-cover bg-center w-screen" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <section className="bg-[url('/images/overlay-pattern/bg-tablet-pattern.svg')] sm:bg-[url('/images/overlay-pattern/bg-simplify-section-desktop.svg')] bg-no-repeat bg-cover bg-center w-screen">
       <NavBar />
       <HeroSection />
       <CTASection />
