@@ -4,7 +4,7 @@ import CTA from '../cta-buttons/CTA';
 // hero banner component
 function Banner() {
   // loads the background image depending on screen size
-    const desktopBG = '/images/overlay-pattern/bg-simplify-section-desktop.svg'; 
+    const desktopBG = '/images/svg/bg-simplify-section-desktop.svg'; 
     const mobileBG = '/images/overlay-pattern/bg-simplify-section-mobile.svg';
     
     const getBG = () => window.innerWidth >= 640 ? desktopBG : mobileBG;
@@ -30,7 +30,5 @@ function Banner() {
     </div>
   )
 }
-
-// "flex flex-col justify-center items-center sm:justify-around gap-4 py-20
 
 export default Banner

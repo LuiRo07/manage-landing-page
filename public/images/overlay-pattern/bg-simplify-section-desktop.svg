@@ -1,23 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1439" height="360" viewBox="0 0 1439 360">
+<svg xmlns="http://www.w3.org/2000/svg" width="1244" height="1439" viewBox="0 0 1024 860">
   <g
     fill="#f25f3a"
     fill-rule="evenodd"
     opacity=".071"
     transform="translate(-171 -373)"
   >
+  <!-- bottom rect -->
     <rect
       width="310.431"
       height="708"
-      x="205"
-      y="410"
+      x="584"
+      y="-168"
       rx="155.215"
       transform="scale(1 -1) rotate(-45 -1484.244 0)"
     />
+    <!-- top rect -->
     <rect
       width="310.431"
       height="708"
-      x="1269"
-      y="7"
+      x="925"
+      y="-57"
       rx="155.215"
       transform="scale(1 -1) rotate(-45 552.684 0)"
     />

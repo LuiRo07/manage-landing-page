@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="#f25f3a" fill-rule="evenodd" opacity="0.071" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>
+<!-- tablet breakpoint is 640px max -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1014" viewBox="0 0 640 1014">
+    <rect width="436" 
+    height="970" 
+    x="574" 
+    y="-580" 
+    fill="#f25f3a" 
+    fill-rule="evenodd" 
+    opacity="0.071" 
+    rx="218" 
+    transform="rotate(45 718.814 -291.157)"/>
+    <rect width="436" 
+    height="970" 
+    x="1074" 
+    y="-280" 
+    fill="#f25f3a" 
+    fill-rule="evenodd" 
+    opacity="0.071" 
+    rx="218" 
+    transform="rotate(45 718.814 -291.157)"/>
+</svg>
