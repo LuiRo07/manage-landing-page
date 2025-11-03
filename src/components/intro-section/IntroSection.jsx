@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar/NavBar'
 import HeroSection from './HeroSection'
 import CTASection from '../cta-section/CTASection'
