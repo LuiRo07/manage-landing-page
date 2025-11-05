@@ -1,10 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Card from './Card';
-import anishaAvatar from '/images/avatars/avatar-anisha.png';
-import aliAvatar from '/images/avatars/avatar-ali.png';
-import richardAvatar from '/images/avatars/avatar-richard.png'; 
-import shanaiAvatar from '/images/avatars/avatar-shanai.png';
 import CTA from '../cta-buttons/CTA';
 import './style.css';
 import testimonialsData from '../../data/data.json';
